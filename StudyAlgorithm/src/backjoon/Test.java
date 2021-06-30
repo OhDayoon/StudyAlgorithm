@@ -1,5 +1,6 @@
 package backjoon;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Test {
@@ -8,24 +9,26 @@ public class Test {
 
 		Scanner sc = new Scanner(System.in);
 		
-		int n= sc.nextInt();	
-		int cnt=0;
-		for(int i=0;i<n;i++) {
-			boolean flag=true;
-			int t=sc.nextInt();
+		ArrayList<Integer> arr = new ArrayList<Integer>();
+		int num=1;
+		int count=0;
+		for(int i=0;i<=1000;i++) {
+			arr.add(num);
+			count++;
 			
-			if(t==1) {
-				continue;
+			if(num==count) {
+				num++;
+				count=0;
 			}
-			for(int j=2;j<t;j++) {
-				if(t%j==0) {
-					flag=false;
-					break;
-				}
-			}
-			if(flag) cnt++;
 		}
-		System.out.println(cnt);
+		
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int sum=0;
+		for(int i=a-1;i<=b-1;i++) {
+			sum+=arr.get(i);
+		}
+		System.out.println(sum);
 		sc.close();
 	}
 }

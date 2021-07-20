@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test6 {
 	// 문자열 다루기 기본

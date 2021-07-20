@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test8 {
 	// 수박수박수박수박수박수?

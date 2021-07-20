@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test12 {
 	// 다트게임

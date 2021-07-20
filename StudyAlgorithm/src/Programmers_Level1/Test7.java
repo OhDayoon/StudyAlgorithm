@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test7 {
 	// 서울에서 김서방 찾기

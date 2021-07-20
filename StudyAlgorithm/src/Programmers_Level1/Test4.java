@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test4 {
 	// 문자열 내 p와 y의 개수

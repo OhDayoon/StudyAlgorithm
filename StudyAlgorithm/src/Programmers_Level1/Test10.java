@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test10 {
 	// 시저암호

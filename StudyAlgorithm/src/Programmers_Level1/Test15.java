@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test15 {
 	// 약수의 개수와 덧셈

@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers_Level1;
 
 public class Test11 {
 	// 소수 개수 찾기

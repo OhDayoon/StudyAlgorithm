@@ -19,7 +19,7 @@ public class Test10814 {
 		}
 		
 		Arrays.sort(member,new Comparator<String[]>() {
-
+			// // compare 메소드는  양의 정수, 0, 음의 정수 중 하나를 반환하며, 양의 정수일 경우만 두 객체의 위치를 바꿔주는 역할을 한다
 			@Override
 			public int compare(String[] a1,String[] a2) {	
 					return Integer.parseInt(a1[0])-Integer.parseInt(a2[0]); 

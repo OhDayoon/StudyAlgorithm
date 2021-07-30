@@ -1,5 +1,7 @@
 package backjoon;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Test {
@@ -7,22 +9,28 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Test stack=new Test();
-		int[] arr= {7, 3, 2, 9, 4};
-		int temp=0;
-		for(int i=1;i<arr.length;i++) {
-			for(int j=0;j<arr.length-i;j++) {
-				if(arr[j]>arr[j+1]) {
-					temp=arr[j];
-					arr[j]=arr[j+1];
-					arr[j+1]=temp;
-				}
-			}
-			
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		String[][] member = new String[n][2];
+		
+		for(int i=0;i<n;i++) {
+			member[i][0]= sc.next();
+			member[i][1]=sc.next();
 		}
 		
-		for(int i=0;i<arr.length;i++) {
-			System.out.println(arr[i]);
+		Arrays.sort(member,new Comparator<String[]>() {
+			
+			@Override
+			public int compare(String[] a1,String[] a2) {	
+					return Integer.parseInt(a1[0])-Integer.parseInt(a2[0]); 
+			}
+		
+		});
+		
+		for(int i=0;i<n;i++) {
+			System.out.println(member[i][0]+" "+member[i][1]);
 		}
-	    }
+		sc.close();
+	}
 }

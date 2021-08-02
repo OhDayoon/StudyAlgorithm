@@ -5,10 +5,12 @@ import java.util.*;
 public class Test10 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int[] arr= {6,10,2};
+		solution(arr);
+		System.out.println(solution(arr));
 
 	}
-	 public String solution(int[] numbers) {
+	 public static String solution(int[] numbers) {
 	        String answer = "";
 	        String[] arr=new String[numbers.length];
 	        for(int i=0;i<numbers.length;i++){
@@ -18,6 +20,8 @@ public class Test10 {
 	        Arrays.sort(arr,new Comparator<String>(){
 	            @Override
 	            public int compare(String s1,String s2){
+	              //  System.out.println("내림차순"+s2+s1);
+	              //  System.out.println("오름차순"+s1+s2);
 	                return (s2+s1).compareTo(s1+s2); // 내림차순
 	            }
 	        });
